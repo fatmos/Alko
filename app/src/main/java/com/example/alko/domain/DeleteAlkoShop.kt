@@ -1,7 +1,7 @@
 package com.example.alko.domain
 
-class DeleteAlkoShop {
-    fun deleteAlkoShop(shopItem: ShopItem){
-
+class DeleteAlkoShop(private val shopListRepository:ShopListRepository){
+    fun deleteShopItem(shopItem: ShopItem){
+        shopListRepository.deleteShopItem(shopItem)
     }
 }

@@ -1,7 +1,7 @@
 package com.example.alko.domain
 
-class GetAlkoShopItem {
-    fun getAlkoShopItem(shopItemId: Int): ShopItem {
-        TODO()
+class GetAlkoShopItem(private val shopListRepository:ShopListRepository) {
+    fun getShopItem(shopItemId: Int): ShopItem {
+        return shopListRepository.getShopItem(shopItemId)
     }
 }
