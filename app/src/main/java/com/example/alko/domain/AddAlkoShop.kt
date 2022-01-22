@@ -1,7 +1,8 @@
 package com.example.alko.domain
 
-class AddAlkoShop {
-    fun Add() {
-        TODO()
+class AddAlkoShop(private val shopListRepository:ShopListRepository) {
+    fun addShopItem (shopItem: ShopItem) {
+        shopListRepository.addShopItem(shopItem)
+
     }
 }
